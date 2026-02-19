@@ -7,11 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
 <nav class="navbar">
     <div class="logo">Nexon AI</div>
+    
+    <!-- Hamburger (for mini screen) -->
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <ul class="nav-links" id="nav-links">
         <li><a href="#features">Features</a></li>
         <li><a href="#chat">Chat</a></li>
@@ -30,25 +40,25 @@
 <section class="features" id="features">
     <h2>Why Choose Nexon?</h2>
 
-<div class="feature-grid">
-    <div class="feature-card">
-        <i class="fa-solid fa-bolt"></i>
-        <h3>Fast Responses</h3>
-        <p>Powered by Gemini 2.5 Flash for instant replies.</p>
-    </div>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Fast Responses</h3>
+            <p>Powered by advanced AI models.</p>
+        </div>
 
-    <div class="feature-card">
-        <i class="fa-solid fa-brain"></i>
-        <h3>Smart AI</h3>
-        <p>Advanced reasoning and contextual understanding.</p>
-    </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Smart AI</h3>
+            <p>Advanced reasoning and contextual understanding.</p>
+        </div>
 
-    <div class="feature-card">
-        <i class="fa-solid fa-shield-halved"></i>
-        <h3>Secure</h3>
-        <p>Modern API architecture and scalable design.</p>
+        <div class="feature-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Secure</h3>
+            <p>Modern API architecture and scalable design.</p>
+        </div>
     </div>
-</div>
 
 </section>
 
@@ -57,20 +67,28 @@
 <section class="chat-section" id="chat">
     <div class="chat-container">
 
-    <div class="chat-header">
-        Nexon Assistant
-    </div>
+        <div class="chat-header">
+            Nexon Assistant
+        </div>
 
-    <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-messages" id="chat-messages">
+         <!-- Just for understanding the js -->
+            <!-- <div class="message user-message">
+                <div class="message-content">Hello</div>
+            </div>
+            <div class="message bot-message">
+                <div class="message-content">Hi</div>
+            </div> -->
+        </div>
 
-    <div class="chat-input-container">
-        <input type="text" id="user-input" placeholder="Type your message...">
-        <button id="send-button">
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">
             <i class="fa-solid fa-paper-plane"></i>
-        </button>
-    </div>
+            </button>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
@@ -89,6 +107,8 @@
 <footer>
     © 2026 Nexon AI. All Rights Reserved. | Built by Asif Shariar
 </footer>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
